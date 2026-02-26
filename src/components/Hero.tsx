@@ -1,6 +1,7 @@
 import './Hero.css';
 import portfolioData from '../data/portfolioData';
 import { useLanguage } from '../hooks/useLanguage';
+import { resolveUrl } from '../utils/resolveUrl';
 
 const Hero = () => {
   const { personal, projects } = portfolioData;
@@ -43,7 +44,7 @@ const Hero = () => {
           <div className="image-placeholder">
             {personal.profileImage ? (
               <img 
-                src={personal.profileImage} 
+                src={resolveUrl(personal.profileImage)} 
                 alt={personal.name} 
                 className="profile-photo"
               />

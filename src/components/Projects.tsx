@@ -3,6 +3,7 @@ import './Projects.css';
 import portfolioData from '../data/portfolioData';
 import ImageModal from './ImageModal';
 import { useLanguage } from '../hooks/useLanguage';
+import { resolveUrl } from '../utils/resolveUrl';
 
 interface ModalState {
   isOpen: boolean;
@@ -81,10 +82,10 @@ const Projects = () => {
               <div className="project-image">
                 {project.image && (project.image.startsWith('/') || project.image.startsWith('http')) ? (
                   <img 
-                    src={project.image} 
+                    src={resolveUrl(project.image)} 
                     alt={project.title} 
                     className="project-img"
-                    onClick={() => openModal(project.image, project.title)}
+                    onClick={() => openModal(resolveUrl(project.image), project.title)}
                     style={{ cursor: 'pointer' }}
                   />
                 ) : (

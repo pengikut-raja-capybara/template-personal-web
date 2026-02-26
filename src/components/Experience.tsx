@@ -3,6 +3,7 @@ import './Experience.css';
 import portfolioData from '../data/portfolioData';
 import ImageModal from './ImageModal';
 import { useLanguage } from '../hooks/useLanguage';
+import { resolveUrl } from '../utils/resolveUrl';
 
 interface ModalState {
   isOpen: boolean;
@@ -68,11 +69,11 @@ const Experience = () => {
                               {item.media.images.map((image, imgIdx: number) => (
                                 <div key={imgIdx} className="media-grid-item">
                                   <img 
-                                    src={image.url}
+                                    src={resolveUrl(image.url)}
                                     alt={t(image.alt) || t(item.title)}
                                     className="grid-image"
                                     loading="lazy"
-                                    onClick={() => openModal(image.fullUrl || image.url, t(image.alt) || t(item.title))}
+                                    onClick={() => openModal(resolveUrl(image.fullUrl || image.url), t(image.alt) || t(item.title))}
                                   />
                                 </div>
                               ))}

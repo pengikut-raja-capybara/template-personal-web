@@ -1,5 +1,6 @@
 import { useState, useEffect, type MouseEvent } from 'react';
 import './ImageModal.css';
+import { resolveUrl } from '../utils/resolveUrl';
 
 interface ImageModalProps {
   isOpen: boolean;
@@ -72,7 +73,7 @@ const ImageModal = ({ isOpen, onClose, imageSrc, imageAlt }: ImageModalProps) =>
 
         <div className="modal-image-container">
           <img
-            src={imageSrc}
+            src={resolveUrl(imageSrc)}
             alt={imageAlt}
             style={{ transform: `scale(${zoomLevel})` }}
             className="modal-image"
