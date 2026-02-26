@@ -25,7 +25,7 @@ const Skills = () => {
               <div className="skills-badges">
                 {category.skills.map((skill, skillIndex: number) => (
                   <span key={skillIndex} className="skill-badge">
-                    {skill}
+                    {typeof skill === 'string' ? skill : skill.name}
                   </span>
                 ))}
               </div>

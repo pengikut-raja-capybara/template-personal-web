@@ -40,7 +40,7 @@ export interface Media {
 
 export interface ExperienceItem {
   title: string | MultiLangText;
-  organization: string;
+  organization: string | MultiLangText;
   date: string;
   description: MultiLangText;
   skills: string[];
@@ -63,13 +63,23 @@ export interface Experience {
 
 // About Types
 export interface About {
-  title: MultiLangText;
-  subtitle: MultiLangText;
   paragraphs: {
     id: string[];
     en: string[];
   };
-  highlights: Array<{
+  stats: Array<{
+    number: string;
+    label: MultiLangText;
+  }>;
+  services: Array<{
+    icon: string;
+    title: MultiLangText;
+    description: MultiLangText;
+  }>;
+  // legacy fields kept optional for compatibility
+  title?: MultiLangText;
+  subtitle?: MultiLangText;
+  highlights?: Array<{
     icon: string;
     label: MultiLangText;
     value: string;
@@ -84,11 +94,13 @@ export interface Project {
   image: string;
   technologies: string[];
   category: string;
-  github?: string;
-  demo?: string;
+  github?: string | null;
+  demo?: string | null;
+  featured?: boolean;
 }
 
 export interface Projects {
+  enabled?: boolean;
   title: MultiLangText;
   subtitle: MultiLangText;
   filterLabels: {
@@ -112,9 +124,9 @@ export interface SkillCategory {
 export interface Skills {
   title: MultiLangText;
   subtitle: MultiLangText;
-  additionalTitle: MultiLangText;
   categories: SkillCategory[];
-  additionalSkills: string[];
+  additionalTitle?: MultiLangText;
+  additionalSkills?: string[];
 }
 
 // Contact Types

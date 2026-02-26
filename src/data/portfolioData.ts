@@ -2,7 +2,9 @@
 // PORTFOLIO DATA CONFIGURATION - MULTI LANGUAGE
 // ============================================
 
-const portfolioData = {
+import { PortfolioData } from "../types";
+
+const portfolioData: PortfolioData = {
   // Default language
   defaultLanguage: "id",
 
