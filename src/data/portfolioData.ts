@@ -14,29 +14,29 @@ const portfolioData = {
 
   // INFORMASI PERSONAL
   personal: {
-    name: "Angga Alfiansah",
-    shortName: "AA",
+    name: "Raja Capybara",
+    shortName: "RC",
     profileImage: "/images/optimized/profile-medium.webp",
     title: {
-      id: "Software Engineer & Security Researcher",
-      en: "Software Engineer & Security Researcher",
+      id: "Capybara yang Berbudi Luhur",
+      en: "The Virtuous Capybara ",
     },
     greeting: {
-      id: "Halo, saya",
-      en: "Hi, I'm",
+      id: "Salam damai, diri ini",
+      en: "Peace be upon you, I'm",
     },
     description: {
-      id: "yang gemar membangun sistem dari fase 'Zero to One'. Fokus menciptakan aplikasi yang andal, scalable, dan aman secara fundamental (Secure by Design).",
-      en: "who loves building systems from 'Zero to One' phase. Focused on creating reliable, scalable, and fundamentally secure applications (Secure by Design).",
+      id: "seorang penjaga harmoni digital yang tenang namun presisi. Fokus membangun sistem dari 'Zero to One' dengan semangat budi luhur: andal, aman, dan bermanfaat bagi sesama.",
+      en: "a calm yet precise guardian of digital harmony. Focused on building systems from 'Zero to One' with a virtuous spirit: reliable, secure, and beneficial to others.",
     },
     location: "Jakarta, Indonesia",
-    email: "anggaalfiansah26@gmail.com",
-    phone: "+62 857 4169 0725",
+    email: "rajacapybara275@gmail.com",
+    phone: "+62 851 5772 5864",
 
     social: {
-      github: "https://github.com/anggaalfiansah",
-      linkedin: "https://www.linkedin.com/in/anggaalfiansah",
-      instagram: "https://instagram.com/anggaalfiansah26",
+      github: "https://github.com/pengikut-raja-capybara",
+      linkedin: "https://www.linkedin.com/in/rajacapybara/",
+      instagram: "https://instagram.com/rajacapybara",
     },
   },
 
@@ -44,78 +44,15 @@ const portfolioData = {
   experience: {
     enabled: true,
     title: {
-      id: "Pengalaman & Perjalanan",
-      en: "Experience & Journey",
+      id: "Jejak Pengabdian",
+      en: "Service Journey",
     },
     subtitle: {
-      id: "Perjalanan karir profesional, pelatihan intensif, dan kontribusi keamanan.",
-      en: "Professional career journey, intensive training, and security contributions.",
+      id: "Perjalanan profesional dalam menjaga ekosistem siber tetap tenang dan aman.",
+      en: "Professional journey in keeping the cyber ecosystem calm and secure.",
     },
 
     categories: [
-      {
-        type: "work",
-        title: {
-          id: "Pengalaman Kerja",
-          en: "Professional Work",
-        },
-        icon: "💼",
-        items: [
-          {
-            title: { id: "Programmer", en: "Programmer" },
-            organization: "PT Digital Seucom Indonesia",
-            date: "Jan 2022 - Present",
-            description: {
-              id: "Mengembangkan software enterprise dan solusi IoT. Membuat platform edukasi offline-first (SEP), sistem HRIS, smart parking gate (Qsentinel), dan CMS digital signage. Migrasi deployment ke Docker untuk reliabilitas lebih baik.",
-              en: "Developing enterprise software and IoT solutions. Built offline-first education platform (SEP), HRIS system, smart parking gate (Qsentinel), and digital signage CMS. Migrated deployment to Docker for better reliability.",
-            },
-            skills: ["Docker", "Node.js", "React.js", "Raspberry Pi"],
-            media: null,
-          },
-          {
-            title: { id: "Programmer", en: "Programmer" },
-            organization: "PT Multiartha Prima Sejahtera",
-            date: "May 2021 - Dec 2021",
-            description: {
-              id: "Mengembangkan aplikasi mobile omnichannel dengan React Native. Melakukan reverse engineering API marketplace (Shopee, Tokopedia, Bukalapak) untuk upload produk otomatis. Integrasi chat multi-platform (FB, IG, Marketplace) ke satu interface.",
-              en: "Developed omnichannel mobile app with React Native. Reverse engineered marketplace APIs (Shopee, Tokopedia, Bukalapak) for automated product uploads. Integrated multi-platform chats (FB, IG, Marketplace) into single interface.",
-            },
-            skills: ["React Native", "Reverse Engineering", "REST API", "Session Management"],
-            media: null,
-          },
-          {
-            title: { id: "Instruktur", en: "Instructor" },
-            organization: "PT Multiartha Prima Sejahtera",
-            date: "Apr 2021 - May 2021",
-            description: {
-              id: "Mengajar desain grafis (Photoshop, Illustrator) dan dasar pemrograman web/mobile (React.js, Node.js).",
-              en: "Taught graphic design (Photoshop, Illustrator) and basic web/mobile programming (React.js, Node.js).",
-            },
-            skills: ["Photoshop", "Illustrator", "React.js", "Node.js"],
-            media: null,
-          },
-          {
-            title: { id: "Engineer", en: "Engineer" },
-            organization: "PT Bahtera Pintas Utama",
-            date: "Jul 2019 - Jul 2020",
-            description: {
-              id: "Integrasi IoT & Server untuk proyek Digitalisasi SPBU Pertamina (monitoring stok & transaksi real-time). Staging dan konfigurasi switch untuk migrasi SD-WAN Alfamart. Instalasi jaringan IP Camera.",
-              en: "IoT & Server integration for Pertamina Gas Station Digitalization (real-time stock & transaction monitoring). Staging and switch configuration for Alfamart SD-WAN migration. IP Camera network installation.",
-            },
-            skills: ["IoT Integration", "Server Rack Assembly", "SD-WAN", "CCTV/IP Camera"],
-          },
-          {
-            title: { id: "Teknisi Jaringan", en: "Network Technician" },
-            organization: "PT Wisesa Sudi Karya",
-            date: "Dec 2018 - Jul 2019",
-            description: {
-              id: "Instalasi perangkat jaringan (Wireless & Fiber) untuk klien residensial dan korporat. Troubleshooting konektivitas di layer fisik dan data link. Pemasangan switch untuk CCTV IP Camera.",
-              en: "Network device installation (Wireless & Fiber) for residential and corporate clients. Connectivity troubleshooting at physical and data link layers. Switch installation for IP Camera CCTV.",
-            },
-            skills: ["Network Installation", "Fiber Optic", "Troubleshooting", "CCTV Setup"],
-          },
-        ],
-      },
       {
         type: "education",
         title: {
@@ -137,103 +74,9 @@ const portfolioData = {
             },
             skills: ["Information Systems", "Cybersecurity", "Software Engineering"],
           },
-          {
-            title: {
-              id: "Teknik Komputer Jaringan",
-              en: "Computer Network Engineering",
-            },
-            organization: "SMK At-Thoat Toroh",
-            date: "2015 - 2018",
-            description: {
-              id: "Lulus dengan predikat terbaik satu jurusan.",
-              en: "Graduated as the best student in the department.",
-            },
-            skills: ["Network Engineering", "System Administration", "Hardware Maintenance"],
-          },
         ],
       },
-      {
-        type: "training",
-        title: {
-          id: "Pelatihan & Sertifikasi",
-          en: "Training & Certification",
-        },
-        icon: "📜",
-        items: [
-          {
-            title: "SMTP 2025 (Security Manpower Training)",
-            organization: "KISIA & Ministry of Science and ICT of South Korea",
-            date: "2025",
-            description: {
-              id: "Meraih predikat 'Highest Distinction' pada fase Online Training, kemudian terpilih sebagai Top 12 Finalis untuk mengikuti Onsite Training di Korea Selatan. Mempelajari Web Security, Network Security, Cryptography, OSINT, dan Malware Analysis.",
-              en: "Achieved 'Highest Distinction' in the Online Training phase, then selected as Top 12 Finalist to attend Onsite Training in South Korea. Studied Web Security, Network Security, Cryptography, OSINT, and Malware Analysis.",
-            },
-            skills: ["Web Security", "Network Security", "Cryptography", "OSINT", "Malware Analysis"],
-            media: {
-              images: [
-                {
-                  url: "/images/optimized/smtp-arrival-thumbnail.webp",
-                  fullUrl: "/images/optimized/smtp-arrival-full.webp",
-                  alt: {
-                    id: "Kedatangan di Korea Selatan - SMTP 2025",
-                    en: "Arrival in South Korea - SMTP 2025",
-                  },
-                },
-                {
-                  url: "/images/optimized/smtp-kbri-thumbnail.webp",
-                  fullUrl: "/images/optimized/smtp-kbri-full.webp",
-                  alt: {
-                    id: "Kunjungan ke KBRI Seoul",
-                    en: "Visit to Indonesian Embassy (KBRI) in Seoul",
-                  },
-                },
-                {
-                  url: "/images/optimized/smtp-learning-thumbnail.webp",
-                  fullUrl: "/images/optimized/smtp-learning-full.webp",
-                  alt: {
-                    id: "Sesi Pembelajaran Cybersecurity",
-                    en: "Cybersecurity Learning Session",
-                  },
-                },
-                {
-                  url: "/images/optimized/smtp-starfield-thumbnail.webp",
-                  fullUrl: "/images/optimized/smtp-starfield-full.webp",
-                  alt: {
-                    id: "Kunjungan ke Starfield Library",
-                    en: "Visit to Starfield Library",
-                  },
-                },
-                {
-                  url: "/images/optimized/smtp-visit-markany-thumbnail.webp",
-                  fullUrl: "/images/optimized/smtp-visit-markany-full.webp",
-                  alt: {
-                    id: "Kunjungan Perusahaan - MarkAny",
-                    en: "Company Visit - MarkAny",
-                  },
-                },
-                {
-                  url: "/images/optimized/smtp-visit-netand-thumbnail.webp",
-                  fullUrl: "/images/optimized/smtp-visit-netand-full.webp",
-                  alt: {
-                    id: "Kunjungan Perusahaan - Netand",
-                    en: "Company Visit - Netand",
-                  },
-                },
-              ],
-            },
-          },
-          {
-            title: "Full Stack Javascript Bootcamp",
-            organization: "Juara Coding",
-            date: "Jan 2021 - Apr 2021",
-            description: {
-              id: "Pelatihan intensif ekosistem JavaScript (MERN Stack). Capstone Project: Aplikasi absensi mobile dengan Face Recognition menggunakan React Native, Firebase, dan Express.js.",
-              en: "Intensive JavaScript ecosystem training (MERN Stack). Capstone Project: Mobile attendance app with Face Recognition using React Native, Firebase, and Express.js.",
-            },
-            skills: ["MERN Stack", "React Native", "Firebase", "Face Recognition"],
-          },
-        ],
-      },
+
       {
         type: "research",
         title: {
@@ -250,44 +93,12 @@ const portfolioData = {
             organization: "Bug Bounty / Disclosure",
             date: "2021 - Present",
             description: {
-              id: "Menemukan kerentanan kritis (Financial Logic, PII Leakage, ATO) pada platform besar seperti SiCepat Express, Segari, KBM App, dan lainnya. Melaporkan temuan secara bertanggung jawab dan berkontribusi pada peningkatan keamanan sistem mereka.",
-              en: "Discovered critical vulnerabilities (Financial Logic, PII Leakage, ATO) on major platforms such as SiCepat Express, Segari, KBM App, and others. Responsibly reported findings and contributed to improving their system security.",
+              id: "Menemukan kerentanan kritis (Financial Logic, PII Leakage, ATO) pada platform besar. Melaporkan temuan secara bertanggung jawab dan berkontribusi pada peningkatan keamanan sistem mereka.",
+              en: "Discovered critical vulnerabilities (Financial Logic, PII Leakage, ATO) on major platforms. Responsibly reported findings and contributed to improving their system security.",
             },
             skills: ["Vulnerability Assessment", "Burp Suite", "OWASP Top 10"],
-            media: {
-              images: [
-                {
-                  url: "/images/optimized/secres-sicepat-thumbnail.webp",
-                  fullUrl: "/images/optimized/secres-sicepat-full.webp",
-                  alt: {
-                    id: "Apresiasi dari SiCepat Express atas temuan keamanan",
-                    en: "Appreciation from SiCepat Express for security findings",
-                  },
-                },
-                {
-                  url: "/images/optimized/secres-kbm-thumbnail.webp",
-                  fullUrl: "/images/optimized/secres-kbm-full.webp",
-                  alt: {
-                    id: "Apresiasi dari KBM App atas temuan keamanan",
-                    en: "Appreciation from KBM App for security findings",
-                  },
-                },
-              ],
-            },
           },
-          {
-            title: {
-              id: "Desain Protokol CECSP",
-              en: "CECSP Protocol Design",
-            },
-            organization: "Engineering Research",
-            date: "Nov 2025",
-            description: {
-              id: "Merancang protokol keamanan custom layer aplikasi menggunakan TypeScript & Bun Runtime untuk mengamankan payload REST API.",
-              en: "Designed custom application layer security protocol using TypeScript & Bun Runtime to secure REST API payloads.",
-            },
-            skills: ["Cryptography", "Protocol Design", "Bun"],
-          },
+
           {
             title: "Capture The Flag (CTF)",
             organization: {
@@ -313,47 +124,6 @@ const portfolioData = {
         items: [
           {
             title: {
-              id: "Petugas Cluster Wisuda",
-              en: "Graduation Cluster Officer",
-            },
-            organization: "Universitas Siber Asia",
-            date: "17-18 Jan 2026",
-            description: {
-              id: "Berpartisipasi sebagai petugas cluster pada acara wisuda kampus. Mengikuti gladi resik pada tanggal 17 Januari dan bertugas pada hari pelaksanaan wisuda tanggal 18 Januari 2026.",
-              en: "Participated as a cluster officer at the university graduation ceremony. Attended rehearsal on January 17 and served on the graduation day on January 18, 2026.",
-            },
-            skills: ["Event Coordination", "Teamwork", "Public Service"],
-            media: {
-              images: [
-                {
-                  url: "/images/optimized/wisuda-1-thumbnail.webp",
-                  fullUrl: "/images/optimized/wisuda-1-full.webp",
-                  alt: {
-                    id: "Dokumentasi Wisuda UNSIA 2026",
-                    en: "UNSIA Graduation 2026 Documentation",
-                  },
-                },
-                {
-                  url: "/images/optimized/wisuda-2-thumbnail.webp",
-                  fullUrl: "/images/optimized/wisuda-2-full.webp",
-                  alt: {
-                    id: "Dokumentasi Wisuda UNSIA 2026",
-                    en: "UNSIA Graduation 2026 Documentation",
-                  },
-                },
-                {
-                  url: "/images/optimized/wisuda-3-thumbnail.webp",
-                  fullUrl: "/images/optimized/wisuda-3-full.webp",
-                  alt: {
-                    id: "Dokumentasi Wisuda UNSIA 2026",
-                    en: "UNSIA Graduation 2026 Documentation",
-                  },
-                },
-              ],
-            },
-          },
-          {
-            title: {
               id: "Kontributor Open Source",
               en: "Open Source Contributor",
             },
@@ -372,18 +142,18 @@ const portfolioData = {
 
   // ABOUT SECTION
   about: {
-    paragraphs: {
+paragraphs: {
       id: [
-        "Kasih saya dokumentasi atau referensi, saya pelajari dan buatkan. Mau itu aplikasi, jaringan, IoT, atau hal baru yang belum pernah saya sentuh sekalipun. Selama ada resource untuk dipelajari, saya yakin bisa.",
-        "Sejak SMK sudah manjat tower triangle buat pasang perangkat jaringan dan ngulik router. Berlanjut ke instalasi fiber optic, integrasi IoT untuk SPBU Pertamina, reverse engineering API marketplace, hingga sekarang fokus mengembangkan aplikasi enterprise. Setiap fase mengajarkan cara melihat masalah dari sudut berbeda.",
-        "Ketertarikan dengan security dimulai dari hal konyol. Baru belajar HTML, iseng buka inspect element, eh ternyata bisa tembus. Sejak itu jadi penasaran: kalau ini bisa diakali, apalagi yang lain?",
-        "Sekarang rasa penasaran itu tersalurkan lewat CTF dan bug bounty. Beberapa temuan sudah dilaporkan ke platform seperti SiCepat dan Segari. Ternyata memahami cara merusak sistem membantu saya membangun dengan lebih baik.",
+        "Capybara dikenal sebagai hewan paling tenang di dunia, dan begitulah cara diri ini menghadapi tantangan teknis: dengan kepala dingin dan hati yang berbudi luhur. Bagi diri ini, keamanan siber bukan soal perang, melainkan soal menjaga harmoni antara inovasi dan perlindungan.",
+        "Saat ini, diri ini fokus mendedikasikan keahlian untuk memberdayakan sektor-sektor yang membutuhkan fondasi digital yang kuat. Diri ini percaya bahwa teknologi harus menjadi alat inklusif yang membantu siapa saja untuk tumbuh secara mandiri dan aman di ruang siber.",
+        "Sebagai seorang pembelajar seumur hidup di bidang sistem informasi, diri ini terus mengasah ketajaman analisis melalui berbagai riset independen dan keterlibatan di kancah global. Bagi diri ini, setiap tantangan adalah ruang untuk memvalidasi kearifan teknis sekaligus memperluas wawasan keamanan siber.",
+        "Setiap solusi yang diri ini bangun selalu didasari pada prinsip keamanan yang fundamental. Memahami cara kerja kerentanan membantu diri ini membangun sistem yang lebih kokoh, tenang, dan tentunya, memberikan rasa aman bagi setiap jiwa yang berinteraksi di dalamnya."
       ],
       en: [
-        "Give me documentation or references, I'll learn and build it. Whether it's applications, networks, IoT, or something completely new. As long as there's a resource to learn from, I'm confident I can figure it out.",
-        "Since vocational high school, I was already climbing triangle towers to install network equipment and tinkering with routers. Then moved on to fiber optic installation, IoT integration for Pertamina gas stations, reverse engineering marketplace APIs, to now focusing on enterprise application development. Each phase taught me to see problems from different angles.",
-        "My interest in security started from something silly. Just learning HTML, opened inspect element out of curiosity, and suddenly I got through. Since then I wondered: if this can be bypassed, what else can?",
-        "Now that curiosity is channeled through CTF and bug bounty. Several findings have been reported to platforms like SiCepat and Segari. Turns out understanding how to break systems helps me build better.",
+        "The Capybara is known as the world's most chill animal, and that's how I approach technical challenges: with a cool head and a virtuous heart. To me, cybersecurity isn't about war, but about maintaining harmony between innovation and protection.",
+        "Currently, I am focused on dedicating my expertise to empowering sectors that need a strong digital foundation. I believe that technology should be an inclusive tool that helps anyone grow independently and securely in cyberspace.",
+        "As a lifelong learner in information systems, I continue to sharpen my analytical skills through various independent research and global engagements. To me, every challenge is a space to validate technical wisdom while expanding cybersecurity insights.",
+        "Every solution I build is always based on fundamental security principles. Understanding how vulnerabilities work helps me build systems that are more robust, serene, and ultimately, provide a sense of security for every soul who interacts with them."
       ],
     },
 
@@ -425,18 +195,6 @@ const portfolioData = {
           en: "Vulnerability assessment and penetration testing for web applications.",
         },
       },
-
-      {
-        icon: "🐳",
-        title: {
-          id: "DevOps & Infrastructure",
-          en: "DevOps & Infrastructure",
-        },
-        description: {
-          id: "Containerization dengan Docker, CI/CD pipelines, dan administrasi server Linux.",
-          en: "Containerization with Docker, CI/CD pipelines, and Linux server administration.",
-        },
-      },
       {
         icon: "🌐",
         title: {
@@ -473,63 +231,7 @@ const portfolioData = {
     items: [
       {
         id: 1,
-        title: "CECSP - Secure API Protocol",
-        description: {
-          id: "Protokol keamanan custom layer aplikasi untuk mengamankan REST API payload dari serangan MITM dan Replay Attacks.",
-          en: "Custom application layer security protocol to secure REST API payloads from MITM and Replay Attacks.",
-        },
-        image: "🔐",
-        category: "security",
-        technologies: ["TypeScript", "Bun Runtime", "AES-128", "Cryptography"],
-        github: "https://github.com/anggaalfiansah/cecsp-protocol",
-        demo: null,
-        featured: true,
-      },
-      {
-        id: 2,
-        title: "Offline-First Educational Platform (SEP)",
-        description: {
-          id: "Sistem manajemen pembelajaran (LMS) offline untuk Interactive Flat Panels (IFP) tanpa ketergantungan internet.",
-          en: "Offline learning management system (LMS) for Interactive Flat Panels (IFP) without internet dependency.",
-        },
-        image: "📚",
-        category: "fullstack",
-        technologies: ["Docker", "React.js", "Node.js", "Offline Architecture"],
-        github: null,
-        demo: null,
-        featured: true,
-      },
-      {
-        id: 3,
-        title: "Qsentinel - IoT Parking System",
-        description: {
-          id: "Sistem parkir pintar mengintegrasikan Raspberry Pi dengan Node.js untuk kontrol hardware gate otomatis.",
-          en: "Smart parking system integrating Raspberry Pi with Node.js for automatic gate hardware control.",
-        },
-        image: "🚗",
-        category: "iot",
-        technologies: ["Raspberry Pi", "Node.js", "Hardware Design"],
-        github: null,
-        demo: null,
-        featured: false,
-      },
-      {
-        id: 4,
-        title: "Marketplace API Reverse Engineering",
-        description: {
-          id: "Analisis dan mapping API internal marketplace (Shopee/Tokopedia) untuk fitur upload produk otomatis.",
-          en: "Analysis and mapping of internal marketplace APIs (Shopee/Tokopedia) for automatic product upload features.",
-        },
-        image: "🔍",
-        category: "research",
-        technologies: ["Reverse Engineering", "React Native", "REST API"],
-        github: null,
-        demo: null,
-        featured: false,
-      },
-      {
-        id: 5,
-        title: "SiCepat & Segari Vulnerability Reports",
+        title: "[REDACTED] Vulnerability Reports",
         description: {
           id: "Temuan celah keamanan kritis (Account Takeover, PII Leakage) yang telah dilaporkan dan diperbaiki.",
           en: "Critical security vulnerability findings (Account Takeover, PII Leakage) that have been reported and fixed.",

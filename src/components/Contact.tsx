@@ -10,14 +10,7 @@ interface FormData {
   message: string;
 }
 
-// Obfuscated contact resolver
-const _0xc = () => {
-  const _a = import.meta.env.VITE_APP_WA_P1 || "NjI4MTI=";
-  const _b = import.meta.env.VITE_APP_WA_P2 || "MzQ1Njc=";
-  const _c = import.meta.env.VITE_APP_WA_P3 || "NTkw";
-  const _d = [_a, _b, _c].map((p) => atob(p)).join("");
-  return _d;
-};
+
 
 const Contact = () => {
   const { personal, contact } = portfolioData;
@@ -50,8 +43,8 @@ ${formData.message}`;
     // Encode message for URL
     const encodedMessage = encodeURIComponent(waMessage);
 
-    // Open WhatsApp with pre-filled message
-    window.open(`https://wa.me/${_0xc()}?text=${encodedMessage}`, "_blank");
+    // Open WhatsApp with pre-filled message using personal phone number
+    window.open(`https://wa.me/${personal.phone.replace(/\s/g, "")}?text=${encodedMessage}`, "_blank");
 
     // Reset form
     setFormData({ name: "", email: "", subject: "", message: "" });
