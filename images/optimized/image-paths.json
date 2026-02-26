@@ -1,0 +1,7 @@
+{
+  "public\\images\\profile.png": {
+    "thumbnail": "/images/optimized//profile-thumbnail.webp",
+    "medium": "/images/optimized//profile-medium.webp",
+    "full": "/images/optimized//profile-full.webp"
+  }
+}
