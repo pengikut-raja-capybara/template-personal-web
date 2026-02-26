@@ -51,7 +51,7 @@
 }
 
 .stat p {
-  color: #cbd5e1;
+  color: var(--text-soft);
   margin: var(--spacing-sm) 0 0 0;
   font-size: var(--font-size-sm);
 }
@@ -120,3 +120,5 @@
     font-size: var(--font-size-3xl);
   }
 }
+
+

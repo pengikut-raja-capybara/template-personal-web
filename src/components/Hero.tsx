@@ -1,11 +1,28 @@
+import { useEffect, useState } from 'react';
 import './Hero.css';
 import portfolioData from '../data/portfolioData';
 import { useLanguage } from '../hooks/useLanguage';
 import { resolveUrl } from '../utils/resolveUrl';
+import { useThemeLayout } from '../hooks/useThemeLayout';
 
 const Hero = () => {
   const { personal, projects } = portfolioData;
   const { t, language } = useLanguage();
+  const { layout } = useThemeLayout();
+  const [terminalWordIndex, setTerminalWordIndex] = useState(0);
+
+  const terminalWords = language === 'id' ? ['Zero to One', 'Secure', 'Harmonious'] : ['Zero to One', 'Secure', 'Harmonious'];
+  const isTerminalMode = layout === 'terminal-mode';
+
+  useEffect(() => {
+    if (!isTerminalMode) return;
+
+    const intervalId = window.setInterval(() => {
+      setTerminalWordIndex((prev) => (prev + 1) % terminalWords.length);
+    }, 1400);
+
+    return () => window.clearInterval(intervalId);
+  }, [isTerminalMode, terminalWords.length]);
 
   // Determine which section to scroll to for primary button
   const primarySection = projects.enabled ? 'projects' : 'experience';
@@ -41,19 +58,34 @@ const Hero = () => {
           </div>
         </div>
         <div className="hero-image">
-          <div className="image-placeholder">
-            {personal.profileImage ? (
-              <img 
-                src={resolveUrl(personal.profileImage)} 
-                alt={personal.name} 
-                className="profile-photo"
-              />
-            ) : (
-              <div className="avatar-circle">
-                <span>{personal.shortName}</span>
+          {isTerminalMode ? (
+            <div className="terminal-panel" aria-live="polite">
+              <div className="terminal-header">
+                <span className="dot red"></span>
+                <span className="dot yellow"></span>
+                <span className="dot green"></span>
               </div>
-            )}
-          </div>
+              <div className="terminal-body">
+                <p>&gt; persona.init("{personal.name}")</p>
+                <p>&gt; mode.set("{terminalWords[terminalWordIndex]}")</p>
+                <p>&gt; status: calm-researcher<span className="cursor">|</span></p>
+              </div>
+            </div>
+          ) : (
+            <div className="image-placeholder">
+              {personal.profileImage ? (
+                <img 
+                  src={resolveUrl(personal.profileImage)} 
+                  alt={personal.name} 
+                  className="profile-photo"
+                />
+              ) : (
+                <div className="avatar-circle">
+                  <span>{personal.shortName}</span>
+                </div>
+              )}
+            </div>
+          )}
         </div>
       </div>
       <div className="scroll-indicator">
